@@ -1,0 +1,41 @@
+{
+  "model": "random_forest",
+  "accuracy": 0.969,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0,
+  "roc_auc": 0.764,
+  "pr_auc": 0.1122,
+  "confusion_matrix": [
+    [
+      1938,
+      0
+    ],
+    [
+      62,
+      0
+    ]
+  ],
+  "selected_model": "random_forest",
+  "thresholds": {
+    "low_max": 0.0351,
+    "medium_max": 0.0759,
+    "critical_min": 0.0833,
+    "note": "Thresholds are the 60th/85th percentile of calibrated predicted risk on a held-out calibration split (capped at 0.30/0.70): prob < low_max => LOW, < medium_max => MEDIUM, else HIGH; prob >= critical_min (smallest distinct calibrated value above the HIGH cut flagging <=5% of the calibration cohort) additionally flags CRITICAL. Probability thresholds targeting 80% recall would flag ~50% of patients at 3% prevalence, so percentile bands are used instead; per-band precision/recall are in metrics.json."
+  },
+  "band_performance": {
+    "HIGH": {
+      "share_of_patients": 0.1425,
+      "precision": 0.1018,
+      "recall": 0.4677
+    },
+    "HIGH_or_MEDIUM": {
+      "share_of_patients": 0.366,
+      "precision": 0.0642,
+      "recall": 0.7581
+    }
+  },
+  "n_test": 2000,
+  "target": "deterioration_within_12h_from_admission",
+  "prevalence": 0.0309
+}

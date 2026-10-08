@@ -1,0 +1,29 @@
+# Environment / secrets
+.env
+backend/.env
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local PostgreSQL cluster (dev-only data directory)
+backend/data/pg/
+
+# Node
+medicare-ai-frontend/node_modules/
+medicare-ai-frontend/dist/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.freebuff/project-structure.txt
+.freebuff/
+backend/data/*.log
+medicare-ai-frontend/build.log
+project-structure.txt

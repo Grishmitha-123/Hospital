@@ -1,0 +1,106 @@
+{
+  "cohort_stats": {
+    "age": {
+      "p10": 25.0,
+      "median": 54.0,
+      "p90": 83.0
+    },
+    "comorbidity_index": {
+      "p10": 0.0,
+      "median": 4.0,
+      "p90": 8.0
+    },
+    "heart_rate_adm": {
+      "p10": 72.09,
+      "median": 84.655,
+      "p90": 97.033
+    },
+    "respiratory_rate_adm": {
+      "p10": 14.44,
+      "median": 18.64,
+      "p90": 22.79
+    },
+    "spo2_pct_adm": {
+      "p10": 92.98,
+      "median": 95.28,
+      "p90": 97.58
+    },
+    "temperature_c_adm": {
+      "p10": 36.61,
+      "median": 36.88,
+      "p90": 37.15
+    },
+    "systolic_bp_adm": {
+      "p10": 101.87,
+      "median": 116.525,
+      "p90": 131.271
+    },
+    "diastolic_bp_adm": {
+      "p10": 63.959,
+      "median": 72.66,
+      "p90": 81.492
+    },
+    "oxygen_flow_adm": {
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0
+    },
+    "mobility_score_adm": {
+      "p10": 2.0,
+      "median": 2.0,
+      "p90": 3.0
+    },
+    "nurse_alert_adm": {
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 1.0
+    },
+    "wbc_count_adm": {
+      "p10": 5.99,
+      "median": 8.19,
+      "p90": 10.37
+    },
+    "lactate_adm": {
+      "p10": 1.08,
+      "median": 1.53,
+      "p90": 1.95
+    },
+    "creatinine_adm": {
+      "p10": 0.81,
+      "median": 1.14,
+      "p90": 1.47
+    },
+    "crp_level_adm": {
+      "p10": 9.259,
+      "median": 24.21,
+      "p90": 39.301
+    },
+    "hemoglobin_adm": {
+      "p10": 12.41,
+      "median": 13.46,
+      "p90": 14.54
+    },
+    "oxygen_support_adm": {
+      "p10": 0.0,
+      "median": 0.0,
+      "p90": 0.0
+    }
+  },
+  "feature_importance": {
+    "respiratory_rate_adm": 0.11423,
+    "heart_rate_adm": 0.09402,
+    "spo2_pct_adm": 0.08811,
+    "lactate_adm": 0.07929,
+    "crp_level_adm": 0.07116,
+    "systolic_bp_adm": 0.07074,
+    "diastolic_bp_adm": 0.06953,
+    "wbc_count_adm": 0.06114,
+    "creatinine_adm": 0.05909,
+    "hemoglobin_adm": 0.05907,
+    "temperature_c_adm": 0.05547,
+    "age": 0.05223,
+    "comorbidity_index": 0.04769,
+    "mobility_score_adm": 0.04018,
+    "admission_type_Elective": 0.0069
+  }
+}

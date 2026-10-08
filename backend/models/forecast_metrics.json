@@ -1,0 +1,152 @@
+{
+  "icu": {
+    "algorithm": "random_forest",
+    "target_column": "ICU_Demand",
+    "selection_metric": "validation MAE (stacked horizons)",
+    "validation": {
+      "mae": 2.945,
+      "rmse": 3.61,
+      "r2": -0.0247
+    },
+    "test": {
+      "mae": 4.026,
+      "rmse": 4.926,
+      "r2": 0.157
+    },
+    "test_by_horizon": {
+      "24h": {
+        "mae": 3.483,
+        "rmse": 4.341,
+        "r2": 0.3514
+      },
+      "48h": {
+        "mae": 4.11,
+        "rmse": 4.952,
+        "r2": 0.1562
+      },
+      "72h": {
+        "mae": 4.484,
+        "rmse": 5.485,
+        "r2": -0.0354
+      }
+    },
+    "all_candidates": {
+      "random_forest": {
+        "validation": {
+          "mae": 2.945,
+          "rmse": 3.61,
+          "r2": -0.0247
+        }
+      },
+      "hist_gradient_boosting": {
+        "validation": {
+          "mae": 3.156,
+          "rmse": 3.787,
+          "r2": -0.1275
+        }
+      }
+    },
+    "n_rows": 576,
+    "split": "chronological 70/15/15 by forecast-origin date"
+  },
+  "emergency": {
+    "algorithm": "random_forest",
+    "target_column": "Emergency_Demand",
+    "selection_metric": "validation MAE (stacked horizons)",
+    "validation": {
+      "mae": 4.029,
+      "rmse": 4.881,
+      "r2": -0.0635
+    },
+    "test": {
+      "mae": 5.403,
+      "rmse": 6.642,
+      "r2": 0.169
+    },
+    "test_by_horizon": {
+      "24h": {
+        "mae": 4.654,
+        "rmse": 5.848,
+        "r2": 0.3611
+      },
+      "48h": {
+        "mae": 5.601,
+        "rmse": 6.744,
+        "r2": 0.1503
+      },
+      "72h": {
+        "mae": 5.953,
+        "rmse": 7.334,
+        "r2": -0.0051
+      }
+    },
+    "all_candidates": {
+      "random_forest": {
+        "validation": {
+          "mae": 4.029,
+          "rmse": 4.881,
+          "r2": -0.0635
+        }
+      },
+      "hist_gradient_boosting": {
+        "validation": {
+          "mae": 4.366,
+          "rmse": 5.265,
+          "r2": -0.2372
+        }
+      }
+    },
+    "n_rows": 576,
+    "split": "chronological 70/15/15 by forecast-origin date"
+  },
+  "general_beds": {
+    "algorithm": "random_forest",
+    "target_column": "General_Demand",
+    "selection_metric": "validation MAE (stacked horizons)",
+    "validation": {
+      "mae": 13.253,
+      "rmse": 15.916,
+      "r2": -0.0901
+    },
+    "test": {
+      "mae": 17.36,
+      "rmse": 21.529,
+      "r2": 0.165
+    },
+    "test_by_horizon": {
+      "24h": {
+        "mae": 15.147,
+        "rmse": 19.246,
+        "r2": 0.3373
+      },
+      "48h": {
+        "mae": 17.745,
+        "rmse": 21.536,
+        "r2": 0.1702
+      },
+      "72h": {
+        "mae": 19.189,
+        "rmse": 23.805,
+        "r2": -0.0138
+      }
+    },
+    "all_candidates": {
+      "random_forest": {
+        "validation": {
+          "mae": 13.253,
+          "rmse": 15.916,
+          "r2": -0.0901
+        }
+      },
+      "hist_gradient_boosting": {
+        "validation": {
+          "mae": 14.486,
+          "rmse": 17.356,
+          "r2": -0.2964
+        }
+      }
+    },
+    "n_rows": 576,
+    "split": "chronological 70/15/15 by forecast-origin date"
+  }
+}

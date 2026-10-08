@@ -1,0 +1,45 @@
+{
+  "model": "patient_deterioration_risk",
+  "algorithm": "random_forest",
+  "target": "deterioration_within_12h_from_admission",
+  "prediction_window": "12h from admission",
+  "features": [
+    "age",
+    "comorbidity_index",
+    "heart_rate_adm",
+    "respiratory_rate_adm",
+    "spo2_pct_adm",
+    "temperature_c_adm",
+    "systolic_bp_adm",
+    "diastolic_bp_adm",
+    "oxygen_flow_adm",
+    "mobility_score_adm",
+    "nurse_alert_adm",
+    "wbc_count_adm",
+    "lactate_adm",
+    "creatinine_adm",
+    "crp_level_adm",
+    "hemoglobin_adm",
+    "oxygen_support_adm",
+    "gender",
+    "admission_type"
+  ],
+  "excluded_leaky_columns": [
+    "baseline_risk_score",
+    "deterioration_event",
+    "deterioration_hour",
+    "deterioration_within_12h_from_admission",
+    "los_hours",
+    "patient_id",
+    "sepsis_risk_score"
+  ],
+  "thresholds": {
+    "low_max": 0.0351,
+    "medium_max": 0.0759,
+    "critical_min": 0.0833,
+    "note": "Thresholds are the 60th/85th percentile of calibrated predicted risk on a held-out calibration split (capped at 0.30/0.70): prob < low_max => LOW, < medium_max => MEDIUM, else HIGH; prob >= critical_min (smallest distinct calibrated value above the HIGH cut flagging <=5% of the calibration cohort) additionally flags CRITICAL. Probability thresholds targeting 80% recall would flag ~50% of patients at 3% prevalence, so percentile bands are used instead; per-band precision/recall are in metrics.json."
+  },
+  "training_rows": 10000,
+  "data_source": "hospital-deterioration-dataset (SYNTHETIC/simulated clinical data for model development and demonstration)",
+  "trained_at": "2026-10-08T16:26:10.904998+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "models": [
+    "icu",
+    "emergency",
+    "general_beds"
+  ],
+  "horizons_hours": [
+    24,
+    48,
+    72
+  ],
+  "source": "final_hospital_forecasting_dataset.csv (daily, synthetic ops data)",
+  "features": "target lags 1/2/3/7/14, rolling mean/std, day_of_week, month, staff/flu/occupancy/discharges lagged by 1 day, horizon_days",
+  "split": "chronological 70/15/15 (no shuffling across time)",
+  "trained_at": "2026-10-08T15:39:05.159979+00:00"
+}

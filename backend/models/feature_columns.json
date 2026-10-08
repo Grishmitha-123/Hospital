@@ -1,0 +1,25 @@
+{
+  "numerical": [
+    "age",
+    "comorbidity_index",
+    "heart_rate_adm",
+    "respiratory_rate_adm",
+    "spo2_pct_adm",
+    "temperature_c_adm",
+    "systolic_bp_adm",
+    "diastolic_bp_adm",
+    "oxygen_flow_adm",
+    "mobility_score_adm",
+    "nurse_alert_adm",
+    "wbc_count_adm",
+    "lactate_adm",
+    "creatinine_adm",
+    "crp_level_adm",
+    "hemoglobin_adm",
+    "oxygen_support_adm"
+  ],
+  "categorical": [
+    "gender",
+    "admission_type"
+  ]
+}
